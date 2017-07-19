@@ -1,0 +1,36 @@
+@import '~@angular/material/theming';
+
+@mixin jumbotron-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  #site-title {
+    margin-bottom: 5px;
+  }
+
+  .jumbo-hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: mat-color($accent); /* old IE */
+    background-color: mat-color($accent); /* Modern Browsers */
+  }
+
+  .jumbo-title {
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    border-top:1px solid mat-color($accent);
+    border-bottom:1px solid mat-color($accent);
+  }
+
+  #jumbo-image {
+    background-image: url("/assets/images/bombe-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height: 50%;
+  }
+}
