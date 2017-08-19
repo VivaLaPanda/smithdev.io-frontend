@@ -1,21 +1,22 @@
 <!--  We are using a sidenav, and it must wrap out content -->
 <md-sidenav-container fullscreen class="mat-typography">
+  <!--Mobile Navigation (Not a components because of sidenav being "special"-->
   <md-sidenav #sidenav mode="over">
     <app-sidenav></app-sidenav>
   </md-sidenav>
-  <md-toolbar color="primary" id="transparent-sidebar" fxHide fxShow.xs>
-    <div class="md-toolbar-layout">
-      <md-toolbar-row>
-        <button md-icon-button (click)="sidenav.toggle()">
-          <i class="material-icons app-toolbar-menu">menu</i>
-        </button>
-
-        smithdev.io
-      </md-toolbar-row>
+  <nav class="navbar fixed-top navbar-inverse bg-faded transparent-navbar" fxHide fxShow.xs fxLayoutAlign="left center">
+    <div class="navbar-brand" fxLayoutAlign=" center">
+      <button md-icon-button class="d-inline-block align-top" (click)="sidenav.toggle()">
+        <i class="material-icons app-toolbar-menu" >menu</i>
+      </button>
+      <a>smithdev</a>
     </div>
-  </md-toolbar>
-  <div style="height: 90%">
+  </nav>
+  <!--End Mobile Navigation-->
+
+  <div style="height: 106.5%">
     <app-jumbotron></app-jumbotron>
+    <app-navbar></app-navbar>
     <router-outlet></router-outlet>
   </div>
 </md-sidenav-container>

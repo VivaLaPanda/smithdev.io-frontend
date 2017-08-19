@@ -1,0 +1,16 @@
+@import '../../../../node_modules/@angular/material/theming';
+
+@mixin navbar-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .transparent-navbar {
+    border-top:1px solid mat-color($accent);
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  .navbar-inverse .navbar-nav .nav-link:hover {
+    color: mat-color($accent, A200)
+  }
+}

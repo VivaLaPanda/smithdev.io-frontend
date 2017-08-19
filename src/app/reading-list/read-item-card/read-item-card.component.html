@@ -1,0 +1,16 @@
+<md-card style="width: 100%">
+  <md-card-header>
+    <md-card-title>{{readItem.title}}</md-card-title>
+    <md-card-subtitle>{{readItem.author}}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image [src]="readItem.img">
+  <md-card-content>
+    <p>
+      {{readItem.tagline}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button (click)="openDialog()">Details</button>
+    <a [href]="readItem.url"><button md-button>Website</button></a>
+  </md-card-actions>
+</md-card>

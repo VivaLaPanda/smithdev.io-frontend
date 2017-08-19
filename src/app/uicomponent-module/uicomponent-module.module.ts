@@ -6,6 +6,7 @@ import {
   MdToolbarModule,
   MdListModule,
   MdIconModule,
+  MdCardModule, MdDialogModule,
 } from '@angular/material';
 import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -21,6 +22,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdToolbarModule,
     MdListModule,
     MdIconModule,
+    MdCardModule,
+    MdDialogModule,
     BrowserAnimationsModule,
     FlexLayoutModule
   ],
@@ -32,6 +35,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdToolbarModule,
     MdListModule,
     MdIconModule,
+    MdCardModule,
+    MdDialogModule,
+    BrowserAnimationsModule,
     FlexLayoutModule
   ],
 })

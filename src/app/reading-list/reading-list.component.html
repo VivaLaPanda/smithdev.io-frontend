@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12" fxLayoutAlign="center center" style="min-height: 15vh">
+      <h1 class="mat-display-2" style="margin-bottom: 0px">
+        Reading List
+      </h1>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-12" fxLayoutAlign="center center" fxLayout="column">
+      <h1 class="headline">
+        Nonfiction
+      </h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12" *ngFor="let readItem of nonFiction">
+      <app-read-item-card [readItem]="readItem"></app-read-item-card>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-12" fxLayoutAlign="center center" fxLayout="column">
+      <h1 class="headline">
+        Fiction
+      </h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12" *ngFor="let readItem of fiction">
+      <app-read-item-card [readItem]="readItem"></app-read-item-card>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-12" fxLayoutAlign="center center" fxLayout="column">
+      <h1 class="headline">
+        Blogs
+      </h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12" *ngFor="let readItem of blog">
+      <app-read-item-card [readItem]="readItem"></app-read-item-card>
+    </div>
+  </div>
+</div>

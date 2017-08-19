@@ -8,13 +8,18 @@ import { UIComponentModule } from './uicomponent-module/uicomponent-module.modul
 
 // smithdev components
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { NavbarComponent } from './navigation/navbar/navbar.component';
+import { JumbotronComponent } from './navigation/jumbotron/jumbotron.component';
 import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './router/app-routing.module';
-import { SidenavComponent } from './sidenav/sidenav.component'
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { ReadingListComponent } from './reading-list/reading-list.component';
+import { BuildBetterRowComponent } from './home/build-better-row/build-better-row.component';
+import { LiveOnPurposeRowComponent } from './home/live-on-purpose-row/live-on-purpose-row.component';
+import { ReadItemCardComponent, ReadItemDetailsComponent } from './reading-list/read-item-card/read-item-card.component';
+import { SeeWorkComponentComponent } from './about/see-work-component/see-work-component.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,13 @@ import { SidenavComponent } from './sidenav/sidenav.component'
     BlogComponent,
     AboutComponent,
     HomeComponent,
-    SidenavComponent
+    SidenavComponent,
+    ReadingListComponent,
+    BuildBetterRowComponent,
+    LiveOnPurposeRowComponent,
+    ReadItemCardComponent,
+    ReadItemDetailsComponent,
+    SeeWorkComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +44,7 @@ import { SidenavComponent } from './sidenav/sidenav.component'
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ReadItemDetailsComponent]
 })
 export class AppModule { }

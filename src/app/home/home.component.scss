@@ -1,0 +1,20 @@
+@import '~@angular/material/theming';
+
+@mixin home-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .accent-text {
+    color: mat-color($accent);
+    font-weight: bolder;
+  }
+
+  .content-row {
+    min-height: 105vh;
+  }
+
+  .text-invert {
+    color: white;
+  }
+}
