@@ -7,10 +7,12 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class BuildBetterRowComponent implements OnInit {
+  public scrollBox: Element;
 
   constructor() { }
 
   ngOnInit() {
+    this.scrollBox = document.getElementsByClassName('mat-sidenav-content')[0]
   }
 
 }

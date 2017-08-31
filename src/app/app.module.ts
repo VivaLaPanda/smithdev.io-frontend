@@ -20,6 +20,8 @@ import { BuildBetterRowComponent } from './home/build-better-row/build-better-ro
 import { LiveOnPurposeRowComponent } from './home/live-on-purpose-row/live-on-purpose-row.component';
 import { ReadItemCardComponent, ReadItemDetailsComponent } from './reading-list/read-item-card/read-item-card.component';
 import { SeeWorkComponentComponent } from './about/see-work-component/see-work-component.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { StickyModule } from 'ng2-sticky-kit/ng2-sticky-kit';
 
 @NgModule({
   declarations: [
@@ -39,9 +41,11 @@ import { SeeWorkComponentComponent } from './about/see-work-component/see-work-c
   ],
   imports: [
     BrowserModule,
+    LazyLoadImageModule,
     BrowserAnimationsModule,
     UIComponentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StickyModule
   ],
   providers: [],
   bootstrap: [AppComponent],

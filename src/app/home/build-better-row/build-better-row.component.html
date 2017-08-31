@@ -1,10 +1,17 @@
-<div class="row justify-content-center" id="build-better">
+<div
+  class="row justify-content-center"
+  id="build-better"
+  lazyLoad="/assets/images/build-better-bg.webp"
+  [scrollTarget]="scrollBox">
   <div class="col-md-10">
     <div class="row content-row" fxLayoutAlign=" center">
       <div class="col-md-4 col-sm-6 push-sm-0">
         <div class="row" fxLayoutAlign="center">
           <div class="col-sm-12 col-6">
-            <img src="/assets/images/build-better-shape.png" class="img-fluid">
+            <img
+              lazyLoad="/assets/images/build-better-shape.webp"
+              [scrollTarget]="scrollBox"
+              class="img-fluid">
           </div>
         </div>
       </div>
@@ -19,7 +26,8 @@
           I am a software developer and student living in Santa Rosa, CA.
         </p>
         <p class="mat-body-2">
-          I have been programming since middle school, and I see software as part of who I am.
+          I have been programming since middle school, and still am just as enthralled as I was when I started.
+          I love writing interesting software and getting to see the things I've made being useful out in the wild.
         </p>
         <p class="mat-body-2">
           I primarily work doing full stack web development, however I also have significant experience in other

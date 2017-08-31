@@ -3,7 +3,11 @@
     <md-card-title>{{readItem.title}}</md-card-title>
     <md-card-subtitle>{{readItem.author}}</md-card-subtitle>
   </md-card-header>
-  <img md-card-image [src]="readItem.img">
+  <img
+    md-card-image
+    [lazyLoad]="readItem.img"
+    [scrollTarget]="scrollBox"
+    class="img-fluid">
   <md-card-content>
     <p>
       {{readItem.tagline}}

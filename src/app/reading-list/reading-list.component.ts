@@ -12,10 +12,12 @@ export class ReadingListComponent implements OnInit {
   public nonFiction: ReadModel[];
   public fiction: ReadModel[];
   public blog: ReadModel[];
+  public scrollBox: Element;
 
   constructor() {}
 
   ngOnInit() {
+    this.scrollBox = document.getElementsByClassName('mat-sidenav-content')[0];
     this.readList = [];
     for (const readItem of readlistJson) {
       this.readList.push(new ReadModel(readItem));

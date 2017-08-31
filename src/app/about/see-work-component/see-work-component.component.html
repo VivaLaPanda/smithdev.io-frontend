@@ -1,10 +1,17 @@
-<div class="row justify-content-center" id="build-better">
+<div
+  class="row justify-content-center"
+  id="build-better"
+  lazyLoad="/assets/images/build-better-bg.jpg"
+  [scrollTarget]="scrollBox">
   <div class="col-md-10">
     <div class="row content-row" fxLayoutAlign=" center">
       <div class="col-md-4 col-sm-6 push-sm-0">
         <div class="row" fxLayoutAlign="center">
           <div class="col-sm-12 col-6">
-            <img src="/assets/images/round_new.png" class="img-fluid">
+            <img
+              lazyLoad="/assets/images/round_new.webp"
+              [scrollTarget]="scrollBox"
+              class="img-fluid">
           </div>
         </div>
       </div>
@@ -19,24 +26,30 @@
           <div class="col-md-4 col-sm-6 col-6">
             <a href="https://github.com/VivaLaPanda" style="width: 100%">
               <button md-raised-button class="icon-button-dark">
-                <h2 class="icon-title">Github</h2>
-                <img class="img-fluid" src="/assets/images/github-mark.png">
+                <div class="icon-button-contents">
+                  <h2 class="icon-title">Github</h2>
+                  <img class="img-fluid link-icon non-lazy" src="/assets/images/github-mark.webp">
+                </div>
               </button>
             </a>
           </div>
           <div class="col-md-4 col-sm-6 col-6">
             <a href="https://www.linkedin.com/in/smithdevio/" style="width: 100%">
               <button md-raised-button class="icon-button-dark">
-                <h2 class="icon-title">LinkedIn</h2>
-                <img class="img-fluid" src="/assets/images/linkedin-black.png">
+                <div class="icon-button-contents">
+                  <h2 class="icon-title">LinkedIn</h2>
+                  <img class="img-fluid link-icon non-lazy" src="/assets/images/linkedin-black.webp">
+                </div>
               </button>
             </a>
           </div>
           <div class="col-md-4 col-sm-6 col-6">
             <a href="https://twitter.com/adriansmithdev" style="width: 100%">
               <button md-raised-button class="icon-button-dark">
-                <h2 class="icon-title">Twitter</h2>
-                <img class="img-fluid" src="/assets/images/twitter.png">
+                <div class="icon-button-contents">
+                  <h2 class="icon-title">Twitter</h2>
+                  <img class="img-fluid link-icon non-lazy" src="/assets/images/twitter.webp">
+                </div>
               </button>
             </a>
           </div>

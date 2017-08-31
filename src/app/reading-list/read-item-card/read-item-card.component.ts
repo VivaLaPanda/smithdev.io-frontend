@@ -10,6 +10,8 @@ import {MdDialogRef, MdDialog, MD_DIALOG_DATA} from '@angular/material';
 export class ReadItemCardComponent implements OnInit {
   @Input()
   public readItem: ReadModel;
+  @Input()
+  public scrollBox: Element;
 
   constructor(public dialog: MdDialog) { }
 

@@ -1,5 +1,9 @@
 # SmithdevIo
 
+This repository is for the website smithdev.io, which servers as my portfolio and eventually as the host for my blog.
+The site uses Angular 4 + Angular Bootstrap + Angular Material. It also uses Boostrap 4 but we don't use any of the
+Boostrap JQuery for performance reasons.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
 ## Development server
@@ -13,6 +17,15 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+Alongside the default process use the `npm run prodBuild` to build with the prod flag as well as carry out some optimizations.
+If you are using this command, the following packages must be installed.
+
+* `npm install -g webp-converter-cli`
+
+Optimizations that occur:
+
+* Convert all image assets to .webp
 
 ## Running unit tests
 

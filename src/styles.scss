@@ -1,2 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Provide fadein for lazyload */
+img {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+img.ng-lazyloaded {
+  opacity: 1;
+}
+
+img.non-lazy {
+  opacity: 1;
+}
+
+.mat-sidenav-content {
+  transform: none !important;
+  z-index: 1;
+}
+
+.sticky-top {
+  top: 0px;
+}

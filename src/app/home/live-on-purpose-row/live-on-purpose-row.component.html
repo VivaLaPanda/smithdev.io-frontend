@@ -1,10 +1,17 @@
-<div class="row justify-content-center" id="live-on-purpose">
+<div
+  class="row justify-content-center"
+  id="live-on-purpose"
+  lazyLoad="/assets/images/living-on-purpose-blue.webp"
+  [scrollTarget]="scrollBox">
   <div class="col-md-10">
     <div class="row content-row" fxLayoutAlign=" center">
       <div class="col-md-4 col-sm-6">
         <div class="row" fxLayoutAlign="center">
           <div class="col-sm-12 col-6">
-            <img src="/assets/images/live-on-purpose-shape.png" class="img-fluid">
+            <img
+              lazyLoad="/assets/images/live-on-purpose-shape.webp"
+              [scrollTarget]="scrollBox"
+              class="img-fluid">
           </div>
         </div>
       </div>
@@ -16,9 +23,9 @@
           Living on <span class="accent-text">purpose.</span>
         </h2>
         <p class="mat-body-2">
-          Outside of programming I like reading and occasionally writing about philosophy and science. For more casual
-          reading I enjoy fantasy and science fiction, and have recently spent a lot of time reading Wuxia. You can check out my
-          reading list here: <a href="/read">Reading List</a>.
+          Outside of programming I like reading, and occasionally writing, about philosophy and science. For more casual
+          reading I enjoy fantasy and science fiction. You can check out my reading list here:
+          <a href="/read">Reading List</a>.
         </p>
         <p class="mat-body-2">
           I participate in the <a href="https://www.gjopen.com/memberships/32814/scores">Good Judgement Open</a>

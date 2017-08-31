@@ -97,7 +97,7 @@ export let readlistJson: {}[] = [
     ' fiction. Also, this recommendation counts as recommending pretty much all of the Discworld books. Just read some,' +
     ' you won’t regret it.',
     tagline: '"Tʜᴇʀᴇ\'s ɴᴏ ᴊᴜsᴛɪᴄᴇ, ᴛʜᴇʀᴇ\'s ᴊᴜsᴛ ᴍᴇ."\n ― Death',
-    img: '/assets/images/readimages/mort.png',
+    img: '/assets/images/readimages/mort.webp',
     url: 'https://www.amazon.com/exec/obidos/ASIN/0552131067/'
   },
   {
@@ -109,7 +109,7 @@ export let readlistJson: {}[] = [
     ' that almost everybody give it a shot.',
     tagline: 'All good is hard. All evil is easy. Dying, losing, cheating, and mediocrity is easy. ' +
     'Stay away from easy."\n ― Scott Alexander',
-    img: '/assets/images/readimages/codex_bg.png',
+    img: '/assets/images/readimages/codex_bg.webp',
     url: 'http://slatestarcodex.com/'
   },
   // {

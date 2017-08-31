@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./see-work-component.component.scss']
 })
 export class SeeWorkComponentComponent implements OnInit {
+  public scrollBox: Element;
 
   constructor() { }
 
   ngOnInit() {
+    this.scrollBox = document.getElementsByClassName('mat-sidenav-content')[0];
   }
 
 }
