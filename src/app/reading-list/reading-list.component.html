@@ -15,7 +15,7 @@
       <hr>
     </div>
   </div>
-  <div class="row">
+  <div class="row bookrow">
     <div class="col-md-4 col-sm-6 col-12" *ngFor="let readItem of nonFiction">
       <app-read-item-card [readItem]="readItem" [scrollBox]="scrollBox"></app-read-item-card>
     </div>
@@ -29,7 +29,7 @@
       <hr>
     </div>
   </div>
-  <div class="row">
+  <div class="row bookrow">
     <div class="col-md-4 col-sm-6 col-12" *ngFor="let readItem of fiction">
       <app-read-item-card [readItem]="readItem" [scrollBox]="scrollBox"></app-read-item-card>
     </div>
@@ -43,7 +43,7 @@
       <hr>
     </div>
   </div>
-  <div class="row">
+  <div class="row bookrow">
     <div class="col-md-4 col-sm-6 col-12" *ngFor="let readItem of blog">
       <app-read-item-card [readItem]="readItem" [scrollBox]="scrollBox"></app-read-item-card>
     </div>

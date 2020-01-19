@@ -6,3 +6,8 @@ hr {
 .headline {
   margin-bottom: 0;
 }
+
+.bookrow {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
